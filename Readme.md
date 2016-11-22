@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Елизенцев](https://up.htmlacademy.ru/adaptive/9/user/230508).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://up.htmlacademy.ru/adaptive/9/user/29002).
 
 ---
 
