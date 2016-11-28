@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Mishka - Каталог товаров</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link" href="index.html">
+          <img src="http://placehold.it/86x35" alt="Mishka" width="86" height="35">
+        </a>
+      </div>
+      <nav class="main-nav  main-nav--opened">
+        <button class="main-nav__toggle  main-nav__toggle--opened" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-items">
+            <li class="main-nav__user-item">
+              <a class="main_nav__user-search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__user-item">
+              <a class="main-nav__user-basket" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__title">Каталог товаров</h1>
+    </header>
+    <main class="page-content">
+      <div class="catalog">
+        <div class="catalog__wrapper">
+          <div class="catalog__items">
+            <article class="catalog-item">
+              <div class="catalog-item__photo">
+                <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
+              </div>
+              <h1 class="catalog-item__title">Зайчик-попрыгайчик</h1>
+              <span class="catalog-item__description">Рост 30 см, вес 200 г</span>
+              <div class="catalog-item__purchase">
+                <span class="catalog-item__price">1 200 руб.</span>
+                <a class="catalog-item__buy  btn" href="#">Купить</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <div class="catalog-item__photo">
+                <img src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+              </div>
+              <h1 class="catalog-item__title">Корзинка для белья</h1>
+              <span class="catalog-item__description">Диаметр 15 см, высота 10 см</span>
+              <div class="catalog-item__purchase">
+                <span class="catalog-item__price">690 руб.</span>
+                <a class="catalog-item__buy  btn" href="#">Купить</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <div class="catalog-item__photo">
+                <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
+              </div>
+              <h1 class="catalog-item__title">Большая корзинка для игрушек</h1>
+              <span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
+              <div class="catalog-item__purchase">
+                <span class="catalog-item__price">1 500 руб.</span>
+                <a class="catalog-item__buy  btn" href="#">Купить</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="production-process">
+        <div class="production-process__wrapper">
+          <h3 class="production-process__title  production-process__title-camera">Процесс производства</h3>
+          <div class="production-process__video">
+            <img src="http://placehold.it/260x150" alt="" width="260" height="150">
+          </div>
+          <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production-process__make-order  btn">Сделать заказ</a>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social">
+          <div class="social-links">
+            <a class="social-link  social-link--inst" href="#" title="Мы в Инстаграме">Инстаграм</a>
+            <a class="social-link  social-link--fb" href="#" title="Мы в Фейсбуке">Фейсбук</a>
+            <a class="social-link  social-link--tw" href="#" title="Мы в Твиттере">Твиттер</a>
+          </div>
+        </div>
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано:</span>
+          <a class="page-footer__copyright-link  btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-basket">
+      <h3 class="modal-basket__title">Добавить в корзину</h3>
+      <span class="modal-basket__description">Выберите размер:</span>
+      <div class="modal-basket__form-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input class="modal-basket__input" type="radio" name="size" value="s" id="size-s" checked>
+          <label class="modal-basket__size-s" for="size-s">S</label>
+          <input class="modal-basket__input" type="radio" name="size" value="m" id="size-m">
+          <label class="modal-basket__size-m" for="size-m">M</label>
+          <input class="modal-basket__input" type="radio" name="size" value="l" id="size-l">
+          <label class="modal-basket__size-l" for="size-l">L</label>
+          <button class="modal-basket__add" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
