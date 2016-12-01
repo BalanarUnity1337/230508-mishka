@@ -1,0 +1,63 @@
+.contacts {
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+  &__email {
+    font-size: 0;
+  }
+  &__field-name {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+    padding-right: 28px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  &__field-value {
+    display: inline-block; 
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 30px;
+    &--email {
+      border-bottom: 1px solid #62d1ba;
+      text-decoration: none;
+      color: $text-color;
+      &:hover {
+        color: #46c1ae;
+        border-color: #46c1ae;
+      }
+      &:active {
+        color: rgba(#46c1ae, 0.3);
+        border-color: rgba(#46c1ae, 0.1);
+      }
+    }
+    &--address {
+      width: 150px;
+      margin: 0;
+    }
+  }
+  &__address {
+    margin-bottom: 34px;
+    font-size: 0;
+  }
+  &__map {
+    box-sizing: border-box;
+    position: relative;
+    width: 320px;
+    min-height: 457px;
+    margin-left: -30px;
+    border: none;
+    line-height: 0;
+    background: #777777 url("../img/map-mobile@1x.jpg") no-repeat;
+  }
+  &__write-us {
+    margin-top: 30px;
+  }
+}

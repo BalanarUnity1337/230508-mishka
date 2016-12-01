@@ -1,0 +1,89 @@
+.modal-basket {
+  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  min-height: 337px;
+  transform: translate(-50%, -50%);
+  border-top: 1px solid #c7c7c7; 
+  box-shadow: 0 5px 10px rgba(#000101, 0.25);
+  background: #ffffff;
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  &__title {
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 13px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+  }
+  &__description {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__input {
+    display: none;
+  }
+  &__switches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__label {
+    box-sizing: border-box;
+    display: block;
+    width: 82px;
+    height: 52px;
+    padding-top: 17px;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid rgba($text-color, 0.1);
+    background: #ffffff;
+    &:nth-of-type(2) {
+      margin: 0 7px;
+    }
+    &:hover {
+      border-color: rgba($text-color, 0.3);
+    }
+  }
+  &__input:first-of-type:checked + &__label--size-s {
+    border-color: #63d1bb;
+  }
+  &__input:nth-of-type(2):checked + &__label--size-m {
+    border-color: #63d1bb;
+  }
+  &__input:last-of-type:checked + &__label--size-l {
+    border-color: #63d1bb;
+  }
+  &__add {
+    display: block;
+    width: 260px;
+    height: 52px;
+    margin-top: 31px;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    background: #63d1bb;
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.main-nav {
+  &__toggle {
+    display: block;
+    width: 20px;
+    height: 14px;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    background: url("../img/icon-menu-open.svg") no-repeat 50% 50%;
+    &:focus {
+      outline: none;
+    }
+    &__toggle--opened {
+      background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
+    }
+  }
+  &__wrapper {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+  }
+  &__items {
+    @include ul-reset();
+  }
+  &__item {
+    box-sizing: border-box;
+    min-height: 79px;
+    border-bottom: 1px solid #ececec;
+  }
+  &__user-items {
+    @include ul-reset();
+  }
+  &__user-item {
+    box-sizing: border-box;
+    min-height: 79px;
+    border-bottom: 1px solid #ececec;
+  }
+  &__item-link {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 75px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    &:hover {
+      color: rgba($link-color, 0.6);
+    }
+    &:active {
+      color: rgba($link-color, 0.3);
+    }
+  }
+  &__user-search {
+    display: block;
+    position: relative;
+    padding: 27px 0 27px 75px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    background: url("../img/icon-search.svg") no-repeat 30px 50%;
+    &:hover {
+      color: rgba($link-color, 0.6);
+    }
+    &:active {
+      color: rgba($link-color, 0.3);
+    }
+    /*&::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      opacity: 0.2;
+      background: url("../img/icon-search.svg") no-repeat 50% 50%;
+    }*/
+  }
+  &__user-basket {
+    display: block;
+    position: relative;
+    padding: 27px 0 27px 75px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    background: url("../img/icon-cart.svg") no-repeat 30px 50%;
+    &:hover {
+      color: rgba($link-color, 0.6);
+    }
+    &:active {
+      color: rgba($link-color, 0.3);
+    }
+    /*&::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      width: 21px;
+      height: 19px;
+      opacity: 0.2;
+      background: url("../img/icon-cart.svg") no-repeat 50% 50%;
+    }*/
+  }
+}
