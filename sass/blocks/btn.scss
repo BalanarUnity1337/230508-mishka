@@ -14,12 +14,12 @@
   color: $text-main-color;
   transition: all 0.5s;
   background: #ffffff;
-  
+
   &:hover {
     color: #ffffff;
     background: $btn-color;
   }
-  
+
   &:active {
     color: rgba(#ffffff, 0.3);
     background: $btn-color;

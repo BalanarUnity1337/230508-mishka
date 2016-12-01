@@ -1,16 +1,16 @@
 .production-process {
   min-height: 503px;
-  
+
   &__wrapper {
     width: 260px;
     margin: 0 auto;
     padding: 0 30px;
   }
-  
+
   &__content {
     border: 1px solid $block-border;
   }
-  
+
   &__title {
     width: 126px;
     margin: 0 auto;
@@ -19,23 +19,23 @@
     line-height: 24px;
     font-weight: 700;
     color: $text-head-color;
-    
+
     &--camera {
       padding-left: 57px;
       background: url("../img/icon-video.svg") no-repeat 0 50%;
     }
   }
-  
+
   &__video {
     position: relative;
     cursor: pointer;
-    
+
     img {
       display: block;
       margin-left: -1px;
       user-select: none;
     }
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -47,24 +47,24 @@
       transition: all 0.3s;
       background: url("../img/icon-play.svg") no-repeat 50% 50%;
     }
-    
+
     &:hover::after {
       transform: translate(-50%, -50%) scale(1.2);
     }
-    
+
     &:active::after {
       opacity: 0.3;
       transform: translate(-50%, -50%) scale(0.8);
     }
   }
-  
+
   &__description {
     width: 183px;
     margin: 28px auto 0;
     font-size: 13px;
     line-height: 24px;
   }
-  
+
   &__make-order {
     width: 192px;
     margin: 25px auto 32px;

@@ -5,7 +5,7 @@
   padding-top: 20px;
   border-bottom: 1px solid $block-border;
   border-top: 1px solid $block-border;
-  
+
   &__wrapper {
     display: flex;
     justify-content: flex-end;
@@ -14,21 +14,21 @@
     margin: 0 auto;
     padding: 0 30px;
   }
-  
+
   &__logo {
     margin-right: 67px;
   }
-  
+
   &__logo img {
     display: block;
   }
-  
+
   &__logo-link {
-    
+
     &:hover {
       opacity: 0.6;
     }
-    
+
     &:active {
       opacity: 0.3;
     }
