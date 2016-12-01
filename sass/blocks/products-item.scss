@@ -1,34 +1,41 @@
 .products-item {
   margin-bottom: 35px;
+  
   &__wrapper {
     width: 260px;
     margin: 0 auto;
     padding: 0 30px;
   }
+  
   &__title {
     margin: 0;
     padding-top: 30px;
     font-size: 25px;
     font-weight: 700;
-    color: #000000;
+    color: $text-head-color;
   }
+  
   &__date {
     font-size: 17px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #63d1bb;
+    color: $legend-color;
   }
+  
   &__description {
     margin: 23px 0 19px;
     font-size: 15px;
     line-height: 24px;
   }
+  
   &__photo {
     margin-bottom: 25px;
   }
+  
   &__photo img {
     display: block;
   }
+  
   &__price {
     display: block;
     font-size: 17px;
@@ -36,23 +43,28 @@
     font-weight: 700;
     text-align: center;
   }
+  
   &__features {
     width: 100%;
     margin-bottom: 28px;
     line-height: 20px;
     border-collapse: collapse;
   }
+  
   &__features-row {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $block-border;
   }
+  
   &__property-name {
     padding: 10px 0;
     padding-right: 10px;
   }
+  
   &__property-value {
     padding: 10px 0;
     padding-left: 8px;
   }
+  
   &__buy {
     margin-top: 24px;
   }
