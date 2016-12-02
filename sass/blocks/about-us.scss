@@ -1,0 +1,55 @@
+.about-us {
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 32px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $text-head-color;
+  }
+
+  &__advantages {
+    @include ul-reset();
+  }
+
+  &__advantage {
+    width: 250px;
+    margin-bottom: 33px;
+    padding-top: 55px;
+    font-size: 17px;
+    line-height: 1em;
+    font-weight: 700;
+    color: $text-head-color;
+
+    &--flower {
+      background: url("../img/icon-feature-1.svg") no-repeat 8px 0;
+    }
+
+    &--card {
+      background: url("../img/icon-feature-3.svg") no-repeat 0 0%;
+    }
+
+    &--heart {
+      background: url("../img/icon-feature-5.svg") no-repeat 7px 0;
+    }
+
+    &--tangle {
+      background: url("../img/icon-feature-2.svg") no-repeat 3px 0;
+    }
+
+    &--rocket {
+      background: url("../img/icon-feature-4.svg") no-repeat 0 0;
+    }
+
+    &--gift {
+      background: url("../img/icon-feature-6.svg") no-repeat 3px 0;
+    }
+  }
+}

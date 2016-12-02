@@ -1,0 +1,27 @@
+.btn {
+  box-sizing: border-box;
+  display: block;
+  width: 260px;
+  height: 52px;
+  padding-top: 16px;
+  border: 2px solid $btn-color;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $text-main-color;
+  transition: all 0.5s;
+  background: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+    background: $btn-color;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background: $btn-color;
+  }
+}

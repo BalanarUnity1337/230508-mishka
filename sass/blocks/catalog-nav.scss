@@ -1,0 +1,126 @@
+.catalog-nav {
+  &__items {
+    @include ul-reset();
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: auto;
+    width: 320px;
+    min-height: 103px;
+    transition: all 0.3s;
+//    overflow: hidden;
+
+    &--interior {
+      background: $nav-interior-bg;
+
+      &:hover {
+        background: $nav-interior-bg-hover;
+      }
+
+      &:active {
+        background: $nav-interior-bg-hover;
+      }
+    }
+
+    &--toys {
+      background: $nav-toys-bg;
+
+      &:hover {
+        background: $nav-toys-bg-hover;
+      }
+
+      &:active {
+        background: $nav-toys-bg-hover;
+      }
+    }
+  }
+
+  &__link {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    padding: 28px 30px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+    }
+
+    &--interior {
+      /*background: #63d1bb;
+      &:hover {
+        background: #59d5bc;
+      }
+      &:active {
+        background: #59d5bc;
+      }*/
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 37px;
+        transform: translateY(-50%);
+        width: 41px;
+        height: 63px;
+        opacity: 0.5;
+        transition: all 0.3s;
+        background: url("../img/icon-interior.svg") no-repeat 50%% 50%;
+      }
+
+      &:hover::after {
+//        top: calc(50% - 5px);
+        opacity: 0.7;
+      }
+
+      &:active::after {
+        opacity: 0.3;
+      }
+    }
+
+    &--toys {
+      /*background: #56c3b2;
+      &:hover {
+        background: #46c1ae;
+      }
+      &:active {
+        background: #46c1ae;
+      }*/
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 27px;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 60px;
+        opacity: 0.5;
+        transition: all 0.3s;
+        background: url("../img/icon-toy.svg") no-repeat 50%% 50%;
+      }
+
+      &:hover::after {
+//        top: calc(50% - 5px);
+        opacity: 0.7;
+      }
+
+      &:active::after {
+        opacity: 0.3;
+      }
+    }
+  }
+}
