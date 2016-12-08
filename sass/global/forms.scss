@@ -12,7 +12,7 @@
   box-shadow: 0 5px 10px rgba(#000000, 0.25);
   background: #ffffff;
 }
-  
+
 .modal-basket--show {
   display: block;
   animation: modal-show 0.3s linear;
@@ -106,7 +106,7 @@
     outline: none;
   }
 }
-  
+
 @media #{$tablet-width} {
   .modal-basket {
     width: 568px;
