@@ -1,9 +1,23 @@
 .catalog {
   margin-top: 30px;
+}
 
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-    padding: 0 30px;
+.catalog__wrapper {
+  @include container();
+  width: 260px;
+}
+
+.catalog__items {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media #{$tablet-width} {
+    align-items: stretch;
+  }
+
+  @media #{$desktop-width} {
+    flex-direction: row;
   }
 }

@@ -12,7 +12,7 @@
   text-decoration: none;
   text-align: center;
   color: $text-main-color;
-  transition: all 0.5s;
+  transition: color 0.5s, background 0.5s;
   background: #ffffff;
 
   &:hover {

@@ -1,7 +1,6 @@
 $link-color: #000000;
 $link-color-hover: rgba($link-color, 0.6);
 $link-color-active: rgba($link-color, 0.3);
-$text-color: #444444;
 $text-main-color: #444444;
 $text-head-color: #000000;
 $btn-color: #444444;
@@ -20,3 +19,5 @@ $nav-interior-bg-hover: #59d5bc;
 $nav-toys-bg: #56c3b2;
 $nav-toys-bg-hover: #46c1ae;
 $modal-radio-active: #63d1bb;
+$tablet-width: "(min-width: 768px)";
+$desktop-width: "(min-width: 1150px)";

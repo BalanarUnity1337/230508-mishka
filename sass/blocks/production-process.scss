@@ -1,72 +1,169 @@
 .production-process {
   min-height: 503px;
+  @include container();
+  width: 260px;
+}
 
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-    padding: 0 30px;
+.production-process__wrapper {
+  border: 1px solid $block-border;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(#000000, 0.1);
   }
 
-  &__content {
-    border: 1px solid $block-border;
+  &:active {
+    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  }
+}
+
+.production-process__title {
+  width: 48.5%;
+  margin: 0 auto;
+  flex: auto;
+  padding: 24px 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $text-head-color;
+
+  &--camera {
+    padding-left: 57px;
+    background: url("../img/icon-video.svg") no-repeat 0 50%;
+  }
+}
+
+.production-process__video {
+  position: relative;
+  margin-left: -1px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102px;
+    height: 78px;
+    transition: all 0.3s;
+    background: url("../img/icon-play.svg") no-repeat 50% 50%;
   }
 
-  &__title {
-    width: 126px;
-    margin: 0 auto;
-    padding: 24px 0;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 700;
-    color: $text-head-color;
+  &:hover::after {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+.production-process__video img {
+  display: block;
+  user-select: none;
+}  
+
+.production-process__description {
+  width: 183px;
+  margin: 28px auto 0;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production-process__make-order {
+  width: 192px;
+  margin: 25px auto 32px;
+}
+
+@media #{$tablet-width} {
+
+  .production-process__title {
+    flex: 1 1 100%;
+    order: 2;
+    font-size: 20px;
+    margin-left: 6.1%;
+    padding-top: 36px;
+    padding-bottom: 37px;
+  }
+
+  .production-process__video {
+    order: 1;
+    height: 455px;
+    background: #444444;
+    border-bottom: 1px solid $block-border;
+  }
+
+  .production-process__description {
+    order: 3;
+    width: 87.6%;
+    flex: 1 1 100%;
+    margin-top: 0;
+    margin-left: 6.1%;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production-process__make-order {
+    order: 4;
+    width: 87.5%;
+    margin-top: 37px;
+    margin-bottom: 45px;
+    margin-left: 6.1%;
+    margin-right: 6.1%;
+  }
+}
+
+@media #{$desktop-width} {
+  .production-process {
+    padding: 0 4.34%;
+  }
+
+  .production-process__wrapper {
+    display: block;
+    border-top: 1px solid $block-border;
+    border-left: none;
+    @include clearfix();
+  }
+
+  .production-process__title {
+    width: 230px;
+    float: right;
+    padding-left: 0;
+    padding-top: 55px;
+    margin-right: 56px;
+    margin-top: 43px;
 
     &--camera {
-      padding-left: 57px;
-      background: url("../img/icon-video.svg") no-repeat 0 50%;
+      background-position: 0 0;
     }
   }
 
-  &__video {
-    position: relative;
-    cursor: pointer;
-
-    img {
-      display: block;
-      margin-left: -1px;
-      user-select: none;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 102px;
-      height: 78px;
-      transition: all 0.3s;
-      background: url("../img/icon-play.svg") no-repeat 50% 50%;
-    }
-
-    &:hover::after {
-      transform: translate(-50%, -50%) scale(1.2);
-    }
-
-    &:active::after {
-      opacity: 0.3;
-      transform: translate(-50%, -50%) scale(0.8);
-    }
+  .production-process__video {
+    width: 682px;
+    height: 455px;
+    float: left;
+    margin-top: -1px;
+    margin-bottom: -2px;
   }
 
-  &__description {
-    width: 183px;
-    margin: 28px auto 0;
-    font-size: 13px;
-    line-height: 24px;
+  .production-process__description {
+    width: 230px;
+    margin-right: 56px;
+    float: right;
+    clear: right;
   }
 
-  &__make-order {
-    width: 192px;
-    margin: 25px auto 32px;
+  .production-process__make-order {
+    width: 230px;
+    float: right;
+    clear: right;
+    width: 21.9%;
+    margin-right: 56px;
+    margin-top: 48px;
   }
 }

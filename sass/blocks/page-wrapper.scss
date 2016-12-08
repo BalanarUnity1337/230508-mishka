@@ -1,9 +1,12 @@
 .page-wrapper {
+  position: relative;
+  z-index: -10;
+  min-width: 320px;
   margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: $text-color;
+  color: $text-main-color;
   background: #ffffff;
 }
