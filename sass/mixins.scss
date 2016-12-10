@@ -3,3 +3,27 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin container() {
+  max-width: 260px;
+  padding: 0 9.375%;
+  margin: 0 auto;
+
+  @media #{$tablet-width} {
+    max-width: 668px;
+    padding: 0 6.5%;
+  }
+
+  @media #{$desktop-width} {
+    max-width: 1050px;
+    padding: 0 4.34%;
+  }
+}
+
+//@mixin clearfix() {
+//  &::after {
+//    content: "";
+//    display: table;
+//    clear: both;
+//  }
+//}

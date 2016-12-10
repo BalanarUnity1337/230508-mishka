@@ -1,6 +1,9 @@
 .banner {
+  position: relative;
   min-height: 488px;
   background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -15%;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .banner__title {
@@ -13,4 +16,71 @@
   font-weight: 700;
   text-align: center;
   color: $text-head-color;
+}
+
+@media (min-width: 500px) {
+  .banner {
+    min-height: 520px;
+  }
+
+  .banner__title {
+//    width: 483px;
+    min-height: 396px;
+//    font-size: 43px;
+//    line-height: 50px;
+  }
+}
+
+@media (min-width: 657px) {
+  .banner {
+    min-height: 600px;
+  }
+
+  .banner__title {
+//    width: 500px;
+    min-height: 496px;
+//    font-size: 43px;
+//    line-height: 50px;
+  }
+}
+
+@media #{$tablet-width} {
+  .banner {
+    position: relative;
+    z-index: -5;
+    margin-top: -42px;
+    min-height: 745px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 11px;
+      background: url("../img/zigzag-fill-desktop.png") repeat-x 0 100%;
+      background-size: 38px 11px;
+    }
+  }
+
+  .banner__title {
+    width: 500px;
+    min-height: 641px;
+    padding-top: 158px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media #{$desktop-width} {
+  .banner::after {
+    height: 15px;
+    background-size: 58px 15px;
+  }
+
+  .banner__title {
+    width: 620px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
