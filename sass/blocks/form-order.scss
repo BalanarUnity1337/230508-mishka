@@ -437,7 +437,6 @@
 
 @media #{$desktop-width} {
   .form-order__description {
-    width: 60.87%;
     max-width: 700px;
     margin: 0 auto;
   }
@@ -485,6 +484,6 @@
   }
 
   .form-order__send-order {
-    width: 32.86%;
+    width: 230px;
   }
 }

@@ -1,5 +1,8 @@
 .reviews {
   margin-bottom: 35px;
+  padding-bottom: 51px;
+  background: url("../img/zigzag-line-desktop.png") repeat-x 50% 100%;
+  background-size: 16px 6px;
 }
 
 .reviews__wrapper {
@@ -85,6 +88,8 @@
 @media #{$tablet-width} {
   .reviews {
     margin-bottom: 103px;
+    padding-bottom: 85px;
+    background-size: 37.5px 15px;
   }
 
   .reviews__wrapper {
@@ -148,6 +153,8 @@
 
 @media #{$desktop-width} {
   .reviews {
+    padding-bottom: 90px;
+    background-size: 58px 23px;
 //    padding-left: 4.34%;
 //    padding-right: 4.34%;
   }

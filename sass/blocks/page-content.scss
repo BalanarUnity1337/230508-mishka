@@ -12,18 +12,24 @@
   font-weight: 700;
   text-align: center;
   color: $text-head-color;
-  background: #f1f1f1;
+  background-color: #f1f1f1;
   transition: font-size 0.3s;
 
   @media #{$tablet-width} {
     font-size: 43px;
     line-height: 50px;
     margin-top: -42px;
-    padding-top: 115px;
+    padding-top: 95px;
+    background-image: url("../img/zigzag-fill-desktop.png");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 38.5px 11px;
   }
 
   @media #{$desktop-width} {
+    padding-bottom: 93px;
     font-size: 53px;
     line-height: 57px;
+    background-size: 58px 15px;
   }
 }

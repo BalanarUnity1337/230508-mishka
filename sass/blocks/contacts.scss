@@ -7,7 +7,7 @@
   font-weight: 700;
   color: $text-head-color;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .contacts__email {
@@ -19,9 +19,8 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-//  max-width: 320px;
   margin: 0 auto;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .contacts__field-name {
@@ -82,9 +81,7 @@
 }
 
 .contacts__write-us {
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
+//  margin: 0 auto;
   margin-top: 30px;
 }
 
@@ -130,7 +127,7 @@
   }
 
   .contacts__write-us {
-    width: 34.43%;
+    width: 230px;
     margin: 0 auto;
     margin-top: 46px;
   }
@@ -138,19 +135,17 @@
 
 @media #{$desktop-width} {
   .contacts__wrapper {
-    @include clearfix();
+    position: relative;
     box-sizing: border-box;
+    padding-top: 75px;
     padding-left: 175px;
     padding-right: 0;
-    width: 100%;
   }
 
   .contacts__title {
-//    padding-left: 175px;
-    margin-top: 70px;
+    width: 315px;
     font-size: 53px;
     line-height: 57px;
-    float: left;
 
     &::after {
       top: -5px;
@@ -159,30 +154,27 @@
   }
 
   .contacts__content {
-//    padding-left: 175px;
     margin: 0;
-    float: left;
-    clear: left;
+    width: 315px;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 47px;
   }
 
   .contacts__address {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
   }
 
   .contacts__map {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 525px;
     margin: 0;
-    position: relative;
-    margin-top: -127px;
   }
 
   .contacts__write-us {
     width: 230px;
-//    margin-left: 175px;
-    float: left;
-    clear: left;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

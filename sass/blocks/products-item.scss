@@ -1,9 +1,16 @@
 .products-item {
   margin-bottom: 35px;
+  padding-bottom: 42px;
+  background: url("../img/zigzag-line-desktop.png") repeat-x 50% 100%;
+  background-size: 16px 6px;
 }
 
 .products-item__wrapper {
   @include container();
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .products-item__header {
@@ -77,13 +84,17 @@
 
 .products-item__buy {
   width: 100%;
-  margin: 0 auto;
   margin-top: 24px;
 }
 
 @media #{$tablet-width} {
+  .products-item {
+    padding-bottom: 69px;
+    background-size: 37.5px 15px;
+  }
+
   .products-item__wrapper {
-    @include clearfix();
+    position: relative;
   }
 
   .products-item__header {
@@ -101,47 +112,44 @@
 
   .products-item__date {
     width: 80px;
-//    padding-top: 12px;
     text-align: center;
   }
 
+  .products-item__content {
+    position: relative;
+  }
+
   .products-item__description {
-    float: left;
     width: 291px;
     font-size: 17px;
     line-height: 30px;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .products-item__features {
-    float: left;
-    clear: left;
     width: 291px;
     margin-bottom: 55px;
   }
 
   .products-item__photo {
-    float: right;
+    position: absolute;
+    top: 6px;
+    right: 0;
     width: 100%;
     max-width: 333px;
     height: 404px;
     margin-bottom: 0;
-    margin-top: -120px;
     background: #444444;
   }
 
   .products-item__price {
-    float: left;
-    clear: left;
     width: 292px;
     font-size: 20px;
   }
 
   .products-item__buy {
     width: 292px;
-    float: left;
-    clear: left;
     margin-top: 30px;
   }
 }
@@ -151,6 +159,8 @@
     margin-top: 70px;
     padding-right: 4.34%;
     padding-left: 4.34%;
+    padding-bottom: 96px;
+    background-size: 58px 23px;
   }
 
   .products-item__wrapper {
@@ -163,6 +173,7 @@
 
   .products-item__header {
     position: relative;
+    z-index: 2;
   }
 
   .products-item__title {
@@ -181,7 +192,7 @@
     width: 291px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .products-item__features {
@@ -190,12 +201,12 @@
   }
 
   .products-item__photo {
+    top: -166px;
     max-width: 525px;
     height: auto;
-    margin-top: -282px;
   }
 
   .products-item__buy {
-//    margin-top: 60px;
+    margin-top: 32px;
   }
 }
