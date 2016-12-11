@@ -26,7 +26,7 @@
 
 .about-us__advantage {
   width: 240px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   padding-top: 55px;
   font-size: 17px;
   line-height: 1em;
@@ -34,15 +34,16 @@
   color: $text-head-color;
 
   &--flower {
+    width: 180px;
     background: url("../img/icon-feature-1.svg") no-repeat 8px 0;
   }
 
   &--card {
-    background: url("../img/icon-feature-3.svg") no-repeat 0 4px;
+    background: url("../img/icon-feature-3.svg") no-repeat 0 0;
   }
 
   &--heart {
-    background: url("../img/icon-feature-5.svg") no-repeat 7px 0;
+    background: url("../img/icon-feature-5.svg") no-repeat 7px 4px;
   }
 
   &--tangle {
@@ -50,6 +51,7 @@
   }
 
   &--rocket {
+    width: 260px;
     background: url("../img/icon-feature-4.svg") no-repeat 0 0;
   }
 
@@ -61,14 +63,15 @@
 
 @media #{$tablet-width} {
   .about-us__title {
-    padding-bottom: 53px;
+    margin-left: -5px;
+    padding-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .about-us__advantages {
     flex-flow: row wrap;
-    padding-right: 30px;
+    padding-right: 34px;
   }
 
   .about-us__advantage {
@@ -118,6 +121,7 @@
 
 @media #{$desktop-width} {
   .about-us {
+    margin-bottom: 32px;
     padding-right: 4.34%;
     padding-left: 4.34%;
   }

@@ -1,5 +1,5 @@
 .modal-basket {
-  display: none;
+  visibility: hidden;
   box-sizing: border-box;
   position: fixed;
   z-index: 3;
@@ -10,12 +10,14 @@
   transform: translate(-50%, -50%);
   border-top: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px rgba(#000000, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
   background: #ffffff;
-}
 
-.modal-basket--show {
-  display: block;
-  animation: modal-show 0.3s linear;
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .modal-basket__wrapper {
@@ -66,6 +68,7 @@
   cursor: pointer;
   border: 2px solid rgba($radio-border, 0.1);
   background: #ffffff;
+  transition: all 0.3s;
 
   &:nth-of-type(2) {
     margin: 0 7px;
@@ -99,8 +102,14 @@
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
-  border: none;
+  border: 2px solid #63d1bb;
   background: #63d1bb;
+  transition: color 0.5s, background 0.5s;
+  
+  &:hover {
+    background: #ffffff;
+    color: $text-main-color;
+  }
 
   &:focus {
     outline: none;
@@ -126,15 +135,5 @@
 
   .modal-basket__description {
     font-size: 17px;
-  }
-}
-
-@keyframes modal-show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

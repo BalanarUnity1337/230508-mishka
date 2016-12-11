@@ -2,6 +2,10 @@
   @media #{$tablet-width} {
     padding: 0 6.5%;
   }
+
+  @media #{$desktop-width} {
+    padding: 0 4.34%;
+  }
 }
 
 .catalog-nav__items {
@@ -93,7 +97,7 @@
       content: "";
       position: absolute;
       top: 50%;
-      right: 27px;
+      right: 28px;
       transform: translateY(-50%);
       width: 60px;
       height: 60px;
@@ -124,6 +128,12 @@
   }
 
   .catalog-nav__link {
-    padding: 34px 30px 41px;
+    padding: 28px 36px 35px;
+    font-size: 20px;
+    line-height: 30px;
+    
+    &--toys::after {
+      right: 35px;
+    }
   }
 }

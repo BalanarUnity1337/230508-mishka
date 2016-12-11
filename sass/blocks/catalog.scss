@@ -1,5 +1,14 @@
 .catalog {
   margin-top: 30px;
+  transition: all 0.3s;
+  
+  @media #{$tablet-width} {
+    margin-top: 80px;
+  }
+
+  @media #{$desktop-width} {
+    margin-top: 130px;
+  }
 }
 
 .catalog__wrapper {
@@ -18,5 +27,10 @@
 
   @media #{$desktop-width} {
     flex-direction: row;
+    
+    &::after {
+      content: "";
+      flex: 0 1 316px;
+    }
   }
 }

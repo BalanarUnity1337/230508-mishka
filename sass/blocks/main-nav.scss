@@ -13,6 +13,8 @@
 }
 
 .main-nav__logo-link {
+    transition: opacity 0.3s;
+
     &:hover {
       opacity: 0.6;
     }
@@ -149,6 +151,7 @@
   font-weight: 700;
   text-decoration: none;
   color: $link-color;
+  transition: color 0.3s;
 
   &:hover {
     color: rgba($link-color, 0.6);
@@ -162,13 +165,15 @@
 .main-nav__user-search {
   display: block;
   position: relative;
+  height: 24px;
   padding: 27px 0 27px 75px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
   color: $link-color;
-  background: url("../img/icon-search.svg") no-repeat 30px 50%;
+  transition: color 0.3s;
+  background: url("../img/icon-search.svg") no-repeat 32px 50%;
 
   &:hover {
     color: rgba($link-color, 0.6);
@@ -200,7 +205,7 @@
   font-weight: 700;
   text-decoration: none;
   color: $link-color;
-  background: url("../img/icon-cart.svg") no-repeat 30px 50%;
+  transition: color 0.3s;
 
   &:hover {
     color: rgba($link-color, 0.6);
@@ -236,6 +241,7 @@
   font-weight: 700;
   text-decoration: none;
   color: $link-color;
+  transition: color 0.3s;
 
   &:hover {
     color: rgba($link-color, 0.6);
@@ -277,7 +283,7 @@
   .main-nav__items {
     position: static;
     order: 3;
-    flex: 1 0 100%;
+    flex: 1 0 70%;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -341,8 +347,9 @@
   }
 
   .main-nav__user-basket {
-    padding-top: 33px;
-    padding-bottom: 31px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 82px;
     text-align: right;
   }
 }
@@ -371,15 +378,15 @@
     }
 
     &:last-of-type .main-nav__item-link {
-      padding-left: 32px;
+      padding-left: 34px;
       border: none;
     }
   }
 
   .main-nav__item-link {
     font-size: 17px;
-    padding-top: 33px;
-    padding-bottom: 31px;
+    padding-top: 31px;
+    padding-bottom: 33px;
     border-right: 1px solid $block-border;
   }
 
@@ -388,10 +395,12 @@
   }
 
   .main-nav__sub-items {
+    position: relative;
+    z-index: 1;
     box-sizing: border-box;
     padding-top: 18px;
     padding-right: 240px;
-    flex: 1 0 100%;
+    flex: 1 0 70%;
     order: 4;
     display: flex;
     flex-flow: row wrap;
