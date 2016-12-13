@@ -1,5 +1,5 @@
 .products-item {
-  margin-bottom: 35px;
+//  margin-bottom: 35px;
   padding-bottom: 42px;
   background: url("../img/zigzag-line-desktop.png") repeat-x 50% 100%;
   background-size: 16px 6px;
@@ -73,22 +73,24 @@
 }
 
 .products-item__property-name {
-  padding: 10px 0;
+  padding: 9px 0;
   padding-right: 10px;
 }
 
 .products-item__property-value {
-  padding: 10px 0;
-  padding-left: 8px;
+  padding: 9px 0;
 }
 
 .products-item__buy {
   width: 100%;
-  margin-top: 24px;
+  margin-top: 26px;
+  font-size: 17px;
+  padding-top: 17px;
 }
 
 @media #{$tablet-width} {
   .products-item {
+    margin-bottom: 20px;
     padding-bottom: 69px;
     background-size: 37.5px 15px;
   }
@@ -100,11 +102,12 @@
   .products-item__header {
     flex-direction: row;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 47px;
+    padding-bottom: 47px;
   }
 
   .products-item__title {
+    margin-left: -5px;
     padding: 0;
     font-size: 43px;
     line-height: 50px;
@@ -112,11 +115,13 @@
 
   .products-item__date {
     width: 80px;
+    margin-right: 23px;
     text-align: center;
   }
 
   .products-item__content {
     position: relative;
+    min-height: 412px;
   }
 
   .products-item__description {
@@ -124,12 +129,16 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 0;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   .products-item__features {
     width: 291px;
-    margin-bottom: 55px;
+    margin-bottom: 58px;
+  }
+
+  .products-item__property-name {
+    padding-right: 0;
   }
 
   .products-item__photo {
@@ -150,13 +159,15 @@
 
   .products-item__buy {
     width: 292px;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 }
 
 @media #{$desktop-width} {
   .products-item {
-    margin-top: 70px;
+    min-height: 622px;
+    margin-top: 85px;
+    margin-bottom: 30px;
     padding-right: 4.34%;
     padding-left: 4.34%;
     padding-bottom: 96px;
@@ -174,6 +185,7 @@
   .products-item__header {
     position: relative;
     z-index: 2;
+    padding-top: 40px;
   }
 
   .products-item__title {
@@ -184,7 +196,7 @@
   .products-item__date {
     position: absolute;
     bottom: 50%;
-    left: -125px;
+    left: -135px;
     transform: translateY(50%);
   }
 
@@ -192,21 +204,21 @@
     width: 291px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 42px;
+    margin-bottom: 50px;
   }
 
   .products-item__features {
     width: 291px;
-    margin-bottom: 107px;
+    margin-bottom: 110px;
   }
 
   .products-item__photo {
-    top: -166px;
+    top: -160px;
     max-width: 525px;
     height: auto;
   }
 
   .products-item__buy {
-    margin-top: 32px;
+    margin-top: 35px;
   }
 }

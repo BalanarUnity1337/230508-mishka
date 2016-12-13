@@ -5,7 +5,6 @@
   min-height: 80px;
   border-bottom: 1px solid $block-border;
   border-top: 1px solid $block-border;
-  transition: min-height 0.3s;
 }
 
 .page-header__wrapper {
@@ -15,12 +14,6 @@
   align-items: center;
   width: auto;
   margin: 0 auto;
-}
-
-.page-header__logo {
-  position: relative;
-  z-index: 2;
-  margin: auto;
 }
 
 .page-header__note {
@@ -64,5 +57,15 @@
     flex: 1 0 50%;
     text-align: right;
     background: transparent;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-header__wrapper {
+    padding: 0 4.34%;
+  }
+
+  .page-header__note {
+    padding-right: 4.34%;
   }
 }
