@@ -35,8 +35,6 @@
 .form-order__title {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
   align-items: center;
   margin: 0;
   margin-bottom: 22px;
@@ -47,8 +45,8 @@
   color: $legend-color;
 
   &::after {
-    flex: auto;
     content: "";
+    flex-grow: 1;
     transform: translateY(-1px);
     margin-left: 26px;
     width: auto;
