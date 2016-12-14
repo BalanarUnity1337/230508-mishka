@@ -10,6 +10,7 @@
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: stretch;
+  transition: box-shadow 0.3s;
 
   &:hover {
     box-shadow: 0 6px 10px rgba(#000000, 0.1);
@@ -105,6 +106,7 @@
 
   .production-process__video {
     order: 1;
+    width: 668px;
     height: 455px;
     background: #444444;
     border-bottom: 1px solid $block-border;

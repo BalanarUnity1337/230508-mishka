@@ -36,28 +36,45 @@
   &--flower {
     width: 180px;
     background: url("../img/icon-feature-1.svg") no-repeat 8px 0;
+    background-size: 33px 38px;
   }
 
   &--card {
     background: url("../img/icon-feature-3.svg") no-repeat 0 0;
+    background-size: 47px 27px;
   }
 
   &--heart {
-    background: url("../img/icon-feature-5.svg") no-repeat 7px 4px;
+    background: url("../img/icon-feature-5.svg") no-repeat 7px 6px;
+    background-size: 34px 27px;
   }
 
   &--tangle {
     background: url("../img/icon-feature-2.svg") no-repeat 3px 0;
+    background-size: 35px 34px;
   }
 
   &--rocket {
+    position: relative;
     width: 260px;
-    background: url("../img/icon-feature-4.svg") no-repeat 0 0;
+    
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -6px;
+      width: 55px;
+      height: 23px;
+      background: url("../img/icon-feature-4.svg") no-repeat 50% 50%;
+      background-size: 55px 23px;
+    }
   }
 
   &--gift {
     width: 230px;
-    background: url("../img/icon-feature-6.svg") no-repeat 3px 0;
+    background: url("../img/icon-feature-6.svg") no-repeat 3px 2px;
+    background-size: 33px 32px;
   }
 }
 

@@ -1,8 +1,7 @@
 .products-item {
-//  margin-bottom: 35px;
   padding-bottom: 42px;
-  background: url("../img/zigzag-line-desktop.png") repeat-x 50% 100%;
-  background-size: 16px 6px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x 8px 100%;
+  background-size: 320px 6px;
 }
 
 .products-item__wrapper {
@@ -92,7 +91,8 @@
   .products-item {
     margin-bottom: 20px;
     padding-bottom: 69px;
-    background-size: 37.5px 15px;
+    background-size: 768px 15px;
+    background-position: 18.5px 100%;
   }
 
   .products-item__wrapper {
@@ -102,7 +102,7 @@
   .products-item__header {
     flex-direction: row;
     align-items: center;
-    padding-top: 47px;
+    padding-top: 44px;
     padding-bottom: 47px;
   }
 
@@ -171,7 +171,8 @@
     padding-right: 4.34%;
     padding-left: 4.34%;
     padding-bottom: 96px;
-    background-size: 58px 23px;
+    background-size: 1150px 23px;
+    background-position: 29px 100%;
   }
 
   .products-item__wrapper {

@@ -16,14 +16,10 @@
   display: none;
 }
 
-.page-footer__logo img {
-  display: block;
-}
-
 .page-footer__social {
   width: 260px;
   padding-top: 24px;
-  padding-bottom: 27px;
+  padding-bottom: 29px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -31,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 18px 0;
+  padding: 22px 0;
 }
 
 .page-footer__copyright-text {
@@ -40,16 +36,37 @@
   line-height: 18px;
   font-weight: 700;
   color: $text-head-color;
+  transition: color 0.3s;
 }
 
 .page-footer__copyright-link {
-  display: block;
-  width: 27px;
-  height: 40px;
-  margin-top: 2px;
-  font-size: 0;
-  background: url("../img/htmlacademy.svg") no-repeat 50% 50%;
-  background-size: 40px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.page-footer__copyright-link:hover .page-footer__copyright-text {
+  color: rgba($link-color, 0.6);
+}
+
+.page-footer__copyright-link:active .page-footer__copyright-text {
+  color: rgba($link-color, 0.3);
+}
+
+.page-footer__copyright-link svg {
+  fill: $svg-fill-color-light;
+  transition: all 0.3s;
+}
+
+.page-footer__copyright-link:hover svg {
+  fill: $svg-fill-color-dark;
+}
+
+.page-footer__copyright-link:active svg {
+  fill: $svg-fill-color-dark;
+  fill-opacity: 0.3;
 }
 
 @media #{$tablet-width} {
@@ -61,11 +78,31 @@
     flex-flow: row wrap;
     padding-top: 51px;
     padding-bottom: 58px;
+    max-width: none;
   }
 
   .page-footer__logo {
     display: block;
-    width: 182px;
+    width: 102px;
+    margin-right: 80px;
+  }
+
+  .page-footer__logo svg {
+    width: 102px;
+    height: 34px;
+  }
+
+  .page-footer__logo-link svg {
+    transition: fill 0.3s, fill-opacity 0.3s;
+  }
+
+  .page-footer__logo-link:hover svg {
+    fill: $svg-fill-color-dark;
+  }
+
+  .page-footer__logo-link:active svg {
+    fill: $svg-fill-color-dark;
+    fill-opacity: 0.3;
   }
 
   .page-footer__social {
@@ -77,8 +114,8 @@
     padding: 0;
   }
 
-  .page-footer__copyright-link {
-    margin-top: 4px;
+  .page-footer__copyright-link svg {
+    margin-top: 5px;
   }
 }
 
