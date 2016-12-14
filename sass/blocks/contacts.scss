@@ -81,7 +81,7 @@
   line-height: 0;
   background: #777777 url("../img/map-mobile@1x.jpg") no-repeat;
   background-size: 320px 457px;
-  
+
   @media #{$retina} {
     background-image: url("../img/map-mobile@2x.jpg");
   }
