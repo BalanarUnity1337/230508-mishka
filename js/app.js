@@ -35,3 +35,11 @@ if (overlay) {
     modal.classList.remove("modal-basket--show");
   })
 }
+
+window.onresize = function() {
+  var width = window.innerWidth;
+  if (width > 767 && main_nav.classList.contains("main-nav--opened")) {
+    main_nav.classList.remove("main-nav--opened");
+    open_menu_btn.classList.remove("main-nav__toggle--opened");
+  }
+}

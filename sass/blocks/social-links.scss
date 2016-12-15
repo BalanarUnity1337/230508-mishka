@@ -3,6 +3,10 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-end;
+
+  @media #{$desktop-width} {
+    align-items: center;
+  }
 }
 
 .social-links__item {
@@ -11,25 +15,34 @@
   &--inst {
     width: 22px;
     height: 22px;
-//    margin-right: 41px;
     margin-left: 37px;
-    background: url("../img/icon-insta.svg") no-repeat 50% 50%;
   }
 
   &--fb {
     width: 15px;
     height: 28px;
-//    margin-left: 30px;
-//    margin-right: 30px;
-    background: url("../img/icon-fb.svg") no-repeat 50% 50%;
   }
 
   &--tw {
-    align-self: center;
     width: 24px;
     height: 21px;
-//    margin-left: 39px;
     margin-right: 42px;
-    background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+
+    @media #{$tablet-width} {
+      align-self: center;
+    }
   }
+}
+
+.social-links__item svg {
+  transition: all 0.3s;
+}
+
+.social-links__item:hover svg {
+  fill: $svg-fill-color-dark;
+}
+
+.social-links__item:active svg {
+  fill: $svg-fill-color-dark;
+  fill-opacity: 0.3;
 }

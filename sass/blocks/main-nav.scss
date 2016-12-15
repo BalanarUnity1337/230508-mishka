@@ -13,16 +13,16 @@
 }
 
 .main-nav__logo-link {
-    transition: opacity 0.3s;
+  transition: opacity 0.3s;
 
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:hover {
+    opacity: 0.6;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .main-nav__toggle {
   position: absolute;
@@ -173,7 +173,6 @@
   text-decoration: none;
   color: $link-color;
   transition: color 0.3s;
-  background: url("../img/icon-search.svg") no-repeat 32px 50%;
 
   &:hover {
     color: rgba($link-color, 0.6);
@@ -182,18 +181,49 @@
   &:active {
     color: rgba($link-color, 0.3);
   }
+}
 
-//  &::before {
-//    content: "";
-//    position: absolute;
-//    top: 50%;
-//    left: 30px;
-//    transform: translateY(-50%);
-//    width: 18px;
-//    height: 18px;
-//    opacity: 0.2;
-//    background: url("../img/icon-search.svg") no-repeat 50% 50%;
-//  }
+.main-nav__user-search svg {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: rgba(#221f1f, 0.2);
+  transition: fill 0.3s;
+}
+
+.main-nav__user-search:hover svg {
+  fill: $svg-fill-color-light;
+}
+
+.main-nav__user-search:active svg {
+  fill: rgba($svg-fill-color-light, 0.3);
+}
+
+.main-nav__user-search-icon {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+
+.main-nav__user-search-icon path {
+  transition: all 0.3s;
+}
+
+.main-nav__user-search:hover .main-nav__user-search-icon path {
+  fill: $svg-fill-color-light;
+  fill-opacity: 1;
+}
+
+.main-nav__user-search:active .main-nav__user-search-icon path {
+  fill: $svg-fill-color-light;
+  fill-opacity: 0.2;
 }
 
 .main-nav__user-basket {
@@ -214,18 +244,49 @@
   &:active {
     color: rgba($link-color, 0.3);
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    width: 21px;
-    height: 19px;
-    opacity: 0.2;
-    background: url("../img/icon-cart.svg") no-repeat 50% 50%;
-  }
+.main-nav__user-basket svg {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 18px;
+  fill: rgba(#221f1f, 0.2);
+  transition: fill 0.3s;
+}
+
+.main-nav__user-basket:hover svg {
+  fill: $svg-fill-color-light;
+}
+
+.main-nav__user-basket:active svg {
+  fill: rgba($svg-fill-color-light, 0.3);
+}
+
+.main-nav__user-basket-icon {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+
+.main-nav__user-basket-icon path {
+  transition: all 0.3s;
+}
+
+.main-nav__user-basket:hover .main-nav__user-basket-icon path {
+  fill: $svg-fill-color-light;
+  fill-opacity: 1;
+}
+
+.main-nav__user-basket:active .main-nav__user-basket-icon path {
+  fill: $svg-fill-color-light;
+  fill-opacity: 0.2;
 }
 
 .main-nav__sub-items {
@@ -262,9 +323,14 @@
     text-align: left;
     order: 1;
     padding-top: 0;
-    margin-top: auto;
+    margin-top: 22px;
     margin-bottom: auto;
     flex: 0 1 300px;
+  }
+
+  .main-nav__logo img {
+    width: 113px;
+    height: 46px;
   }
 
   .main-nav__toggle {
@@ -358,6 +424,13 @@
   .main-nav__logo {
     flex: 1 0 150px;
     text-align: center;
+    margin-top: 8px;
+  }
+
+  .main-nav__logo img {
+    width: 149px;
+    height: 72px;
+    margin-left: -26px;
   }
 
   .main-nav__items {
