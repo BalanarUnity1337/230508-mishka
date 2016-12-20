@@ -43,3 +43,25 @@ window.onresize = function() {
     open_menu_btn.classList.remove("main-nav__toggle--opened");
   }
 }
+
+function initMap() {
+  var map = new google.maps.Map(document.querySelector(".contacts__map"), {
+    zoom: 16,
+    center: {
+      lat: 59.936295,
+      lng: 30.321599
+    }
+  });
+  var isIE11 = !!(navigator.userAgent.match(/Trident/) && navigator.userAgent.match(/rv[ :]11/));
+  var marker = new google.maps.Marker({
+    position: {
+      lat: 59.936295,
+      lng: 30.321599
+    },
+    map: map,
+    icon: {
+        url: isIE11 ? "img/icon-map-pin.png" : "img/icon-map-pin.svg",
+        scaledSize: new google.maps.Size(67, 100)
+    }
+  });
+}

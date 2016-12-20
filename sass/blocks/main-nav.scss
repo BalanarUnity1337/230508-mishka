@@ -152,7 +152,9 @@
   text-decoration: none;
   color: $link-color;
   transition: color 0.3s;
+}
 
+.main-nav__item-link[href] {
   &:hover {
     color: rgba($link-color, 0.6);
   }
@@ -160,6 +162,10 @@
   &:active {
     color: rgba($link-color, 0.3);
   }
+}
+
+.main-nav__item-link:not([href]) {
+  cursor: default;
 }
 
 .main-nav__user-search {
