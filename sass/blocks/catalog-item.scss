@@ -20,6 +20,11 @@
   box-sizing: border-box;
 }
 
+.catalog-item__photo {
+  width: 260px;
+  height: 195px;
+}
+
 .catalog-item__photo img {
   display: block;
   width: 100%;
@@ -33,7 +38,7 @@
 }
 
 .catalog-item__title {
-  width: auto;
+  width: 204px;
   margin: 0;
   padding-top: 26px;
   padding-bottom: 5px;
@@ -110,9 +115,8 @@
   }
 
   .catalog-item__photo {
-    width: 334px;
     height: 334px;
-    flex: 1 0 50%;
+    flex: 0 0 334px;
     background: #444444;
   }
 
@@ -126,6 +130,7 @@
   }
 
   .catalog-item__title {
+    width: auto;
     font-size: 20px;
   }
 
@@ -165,6 +170,6 @@
   }
 
   .catalog-item__purchase {
-    flex: 1 1 37.4%;
+    flex: 1 1 auto;
   }
 }
