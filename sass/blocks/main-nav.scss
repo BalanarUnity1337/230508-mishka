@@ -6,7 +6,7 @@
 
 .main-nav__logo {
   box-sizing: border-box;
-  flex: 1 1 78px;
+  flex: 1 1 56px;
   width: 100%;
   text-align: center;
   padding-top: 22px;
@@ -62,7 +62,7 @@
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 80px;
+  top: 79px;
   width: 100%;
   background: #ffffff;
 }
@@ -72,7 +72,7 @@
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 238px;
+  top: 237px;
   width: 100%;
   background: #ffffff;
 }
@@ -191,9 +191,8 @@
 
 .main-nav__user-search svg {
   position: absolute;
-  top: 50%;
+  top: 31px;
   left: 30px;
-  transform: translateY(-50%);
   width: 18px;
   height: 18px;
   fill: rgba(#221f1f, 0.2);
@@ -206,30 +205,6 @@
 
 .main-nav__user-search:active svg {
   fill: rgba($svg-fill-color-light, 0.3);
-}
-
-.main-nav__user-search-icon {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-}
-
-.main-nav__user-search-icon path {
-  transition: all 0.3s;
-}
-
-.main-nav__user-search:hover .main-nav__user-search-icon path {
-  fill: $svg-fill-color-light;
-  fill-opacity: 1;
-}
-
-.main-nav__user-search:active .main-nav__user-search-icon path {
-  fill: $svg-fill-color-light;
-  fill-opacity: 0.2;
 }
 
 .main-nav__user-basket {
@@ -254,9 +229,8 @@
 
 .main-nav__user-basket svg {
   position: absolute;
-  top: 50%;
+  top: 31px;
   left: 30px;
-  transform: translateY(-50%);
   width: 21px;
   height: 18px;
   fill: rgba(#221f1f, 0.2);
@@ -418,11 +392,19 @@
     border-bottom: 1px solid $block-border;
   }
 
+  .main-nav__user-search svg {
+    top: 36px;
+  }
+
   .main-nav__user-basket {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 82px;
     text-align: right;
+  }
+
+  .main-nav__user-basket svg {
+    top: 35px;
   }
 }
 

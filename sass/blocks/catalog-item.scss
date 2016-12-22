@@ -28,7 +28,7 @@
 .catalog-item__photo img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .catalog-item__content {
@@ -117,7 +117,6 @@
   .catalog-item__photo {
     height: 334px;
     flex: 0 0 334px;
-    background: #444444;
   }
 
   .catalog-item__content {
