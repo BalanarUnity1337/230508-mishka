@@ -2,6 +2,7 @@
 
 * Студент: [Иван Елизенцев](https://up.htmlacademy.ru/adaptive/9/user/230508).
 * Наставник: [Михаил Ожерельев](https://up.htmlacademy.ru/adaptive/9/user/29002).
+* [Demo](https://balanarunity1337.github.io/230508-mishka/)
 
 ---
 
